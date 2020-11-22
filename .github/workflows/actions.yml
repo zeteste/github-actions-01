@@ -6,6 +6,10 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Showing PWD and List files
+        run: |
+          pwd
+          ls -a
       - name: Simple Action jobs
         uses: actions/hello-world-javascript-action@v1
         id: greet
