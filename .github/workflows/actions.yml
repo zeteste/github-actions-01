@@ -12,6 +12,7 @@ jobs:
           ls -a
       - name: Using Checkout
         uses: actions/checkout@v1
+      - name: Showing PWD and List files with checkout
         run: |
           pwd
           ls -a
